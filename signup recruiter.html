@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Recruiter
+{% endblock %}
+
+{% block colors %}
+<style>
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(231, 225, 225);
+    }
+
+    .row {
+        background: white;
+        border-radius: 30px;
+        box-shadow: 12px 12px 22px grey;
+    }
+
+    img {
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    .btn1 {
+        border: none;
+        outline: none;
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+
+    .btn1:hover {
+        background: white;
+        border: 1px solid;
+        color: black;
+    }
+
+    .form-label:after {
+        content: " *";
+        color: red;
+    }
+</style>
+{% endblock %}
+
+{% block nav_item_signup %}
+active
+{% endblock %}
+
+{% block nav_item_recruitersignup %}
+active
+{% endblock %}
+
+{% block content %}
+<section class="form my-1 mx-5">
+    <div class="container col-lg-7 px-7 pt-5">
+
+        <body class="bg-light vsc-initialized">
+
+            <div class="container">
+                <main>
+                    <div class="py-5 text-center">
+                        <h1 class="font-weight-bold py-0">Create Your Recruiter Account</h1>
+                    </div>
+
+                    <section class="form my-4 mx-5">
+                        <div class="container">
+                            <div class="row g-0 g-lg-0">
+                                <div class="col-lg-5">
+
+                                </div>
+                                <div class="form my-4 mx-5">
+                                    <h2 class="font-weight-bold py-0">Register Yourself</h2>
+                                    <form>
+                                        <div class="col-9">
+                                            <label for="lastName" class="form-label">Last name</label>
+                                            <input type="text" class="form-control" id="lastName" placeholder=""
+                                                value="" required="">
+                                            <div class="invalid-feedback">
+                                                Valid Last name is required.
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-9">
+                                            <label for="firstName" class="form-label">First name</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder=""
+                                                value="" required="">
+                                            <div class="invalid-feedback">
+                                                Valid First name is required.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-9">
+                                            <label for="middleName" class="form-label1">Middle name</label>
+                                            <input type="text" class="form-control" id="middleName" placeholder=""
+                                                value="" required="">
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label for="phonenumber" class="form-label">Phone No.</label>
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text">+91</span>
+                                                <input type="number" class="form-control" id="phonenumber"
+                                                    placeholder="" required="">
+                                                <div class="invalid-feedback">
+                                                    Your Phone no. is required.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-9">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="you@example.com">
+                                            <div class="invalid-feedback">
+                                                Please enter a valid email address.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-9">
+                                            <label for="username" class="form-label">Preferred Username</label>
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text">@</span>
+                                                <input type="text" class="form-control" id="username"
+                                                    placeholder="Username" required="">
+                                                <div class="invalid-feedback">
+                                                    Your Username is required.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="col-9">
+                                                <label for="username" class="form-label">Create a Password for your
+                                                    Account</label>
+                                                <div class="input-group has-validation">
+                                                    <input type="password" class="form-control" id="password"
+                                                        placeholder="Password" required="">
+                                                    <div class="invalid-feedback">
+                                                        Your Password is required.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-9">
+                                                    <label for="username" class="form-label">Confirm Password</label>
+                                                    <div class="input-group has-validation">
+                                                        <input type="password" class="form-control" id="password"
+                                                            placeholder="Password" required="">
+                                                        <div class="invalid-feedback">
+                                                            Your Password is required.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col-lg-7">
+                                                        <button type="button" class="btn1 mt-3 mb-4">Register
+                                                            Now</button>
+                                                    </div>
+
+                                            </form>
+                                        </div>
+                                </div>
+                            </div>
+                    </section>
+
+                    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                        crossorigin="anonymous"></script>
+
+                    <script src="form-validation.js"></script>
+
+
+        </body>
+</section>
+{% endblock %}

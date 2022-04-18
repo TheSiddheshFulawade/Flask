@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Companies
+{% endblock %}
+
+{% block nav_item_companines %}
+active
+{% endblock %}
+
+{% block colors %}
+
+{% endblock %}
+
+{% block content %}
+<style>
+    .inner{
+        overflow: hidden;
+    }
+    .inner img{
+        transition: all 1.5s ease;
+    }
+    .inner:hover img{
+        transform: scale(1.5); 
+    }
+</style>
+<div class="py-5 text-center">
+    <h1 class="font-weight-bold py-0">Featured Companies Actively Hiring</h1>
+</div>
+<div class="container my-4">
+    <div class="card-deck">
+        <div class="row mb-3">
+            <div class="col-md-4">
+
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                    style="width: 20rem;">
+                    <div class="inner">
+                        <img class="bd-placeholder-img" width="318" height="270"
+                            src="http://img0cf.b8cdn.com/images/logo/62/1539962_logo_1558438742_n.png" alt="">
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h3 class="mb-0">HCL Technologies</h3>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to
+                            additional content.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <div class="row mb-3">
+            <div class="col-md-4">
+
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                    style="width: 20rem;">
+                    <div class="inner">
+                        <img class="bd-placeholder-img" width="318" height="270"
+                            src="http://img0cf.b8cdn.com/images/logo/62/1539962_logo_1558438742_n.png" alt="">
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h3 class="mb-0">HCL Technologies</h3>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to
+                            additional content.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <div class="row mb-3">
+            <div class="col-md-4">
+
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                    style="width: 20rem;">
+                    <div class="inner">
+                        <img class="bd-placeholder-img" width="318" height="270"
+                            src="http://img0cf.b8cdn.com/images/logo/62/1539962_logo_1558438742_n.png" alt="">
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h3 class="mb-0">HCL Technologies</h3>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to
+                            additional content.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
